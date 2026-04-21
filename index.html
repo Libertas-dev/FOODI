@@ -12,7 +12,7 @@
 
     <body>
         <header class="header">
-            <div class="header-container container">
+            <div class="header__container container">
                 <div class="header__wrapper">
                     <a href="index.html" class="header__logo">
                         <img class="header__logo-img" src="images/icon/svg/main-logo.svg" width="109" height="41" alt="FOODI" />
@@ -42,16 +42,23 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="btn" type="button" data-action="open-reservation-modal">RESERVATION</button>
+
+                    <div class="header__actions">
+                        <button class="btn" type="button" data-action="open-reservation-modal">RESERVATION</button>
+
+                        <button class="burger" type="button" aria-label="Toggle menu">
+                            <span class="burger__line"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
 
         <main>
             <section class="hero">
-                <div class="hero-container container">
+                <div class="hero__container container">
                     <p class="uptitle hero__uptitle">HELLO, NEW FRIEND</p>
-                    <h1 class="title hero-title">RESERVE YOUR TABLE</h1>
+                    <h1 class="title hero__title">RESERVE YOUR TABLE</h1>
                     <div class="hero__buttons">
                         <button class="btn --outline-btn" type="button" data-action="open-reservation-modal">BOOK A TABLE</button>
                         <a class="btn --clear-btn" href="#menu">OPEN MENU</a>
@@ -60,11 +67,11 @@
             </section>
 
             <section class="content-block">
-                <div class="content-block-container container">
+                <div class="content-block__container container">
                     <section class="about-us">
                         <div class="about-us__content">
                             <p class="uptitle about-us__uptitle">ABOUT US</p>
-                            <h2 class="title about-us-title">We Invite You to Visit Our Coffee House</h2>
+                            <h2 class="title about-us__title">We Invite You to Visit Our Coffee House</h2>
                             <p class="description about-us__description">
                                 Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit
                                 enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.
@@ -74,7 +81,7 @@
                         <div class="about-us__img-wrapper">
                             <img
                                 class="about-us__img"
-                                src="images/about-us.jpg"
+                                src="images/about-us.png"
                                 width="720"
                                 height="550"
                                 alt="Our chef and one of our restaurant's dishes"
@@ -87,7 +94,7 @@
                     <section class="coffee-menu">
                         <div class="coffee-menu__content">
                             <p class="uptitle coffee-menu__uptitle">COFFEE MENU</p>
-                            <h2 class="title coffee-menu-title">Quality Kava Beans</h2>
+                            <h2 class="title coffee-menu__title">Quality Kava Beans</h2>
                             <p class="description coffee-menu__description">
                                 Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit
                                 enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.
@@ -97,7 +104,7 @@
                         <div class="coffee-menu__img-wrapper">
                             <img
                                 class="coffee-menu__img"
-                                src="images/coffee-menu.jpg"
+                                src="images/coffee-menu.png"
                                 width="720"
                                 height="550"
                                 alt="Our chef and one of our restaurant's dishes"
@@ -110,7 +117,7 @@
                     <section class="our-team">
                         <div class="our-team__content">
                             <p class="uptitle our-team__uptitle">OUR TEAM</p>
-                            <h2 class="title our-team-title">Use the Tips & Recipes of Our Barista</h2>
+                            <h2 class="title our-team__title">Use the Tips & Recipes of Our Barista</h2>
                             <p class="description our-team__description">
                                 Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit
                                 enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.
@@ -120,7 +127,7 @@
                         <div class="our-team__img-wrapper">
                             <img
                                 class="our-team__img"
-                                src="images/our-team.jpg"
+                                src="images/our-team.png"
                                 alt="Our chef and one of our restaurant's dishes"
                                 width="720"
                                 height="550"
@@ -133,10 +140,10 @@
             </section>
 
             <section class="features">
-                <div class="features-container container">
+                <div class="features__container container">
                     <div class="features__info">
                         <p class="uptitle features__uptitle">FEATURES</p>
-                        <h2 class="title features-title">Why people choose us?</h2>
+                        <h2 class="title features__title">Why people choose us?</h2>
                         <p class="description features__description">
                             Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim.
                             Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.
@@ -157,7 +164,7 @@
                                     />
                                 </div>
                                 <div class="features__item-content">
-                                    <h3 class="features__item-title">MENU FOR EVERY TASTE</h3>
+                                    <h3 class="features__item__title">MENU FOR EVERY TASTE</h3>
                                     <p class="features__text">
                                         Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus
                                         amet massa lacus lorem.
@@ -177,7 +184,7 @@
                                     />
                                 </div>
                                 <div class="features__item-content">
-                                    <h3 class="features__item-title">ALWAYS QUALITY BEANS</h3>
+                                    <h3 class="features__item__title">ALWAYS QUALITY BEANS</h3>
                                     <p class="features__text">
                                         Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus
                                         amet massa lacus lorem.
@@ -197,7 +204,7 @@
                                     />
                                 </div>
                                 <div class="features__item-content">
-                                    <h3 class="features__item-title">EXPERIENCED BARISTA</h3>
+                                    <h3 class="features__item__title">EXPERIENCED BARISTA</h3>
                                     <p class="features__text">
                                         Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus
                                         amet massa lacus lorem.
@@ -210,8 +217,8 @@
             </section>
 
             <section class="reservation">
-                <div class="reservation-container container">
-                    <div class="reservation-content">
+                <div class="reservation__container container">
+                    <div class="reservation__content">
                         <p class="uptitle reservation__uptitle">RESERVATION</p>
                         <h2 class="title reservation__title">Working Hours</h2>
                         <div class="reservation__buttons">
@@ -223,11 +230,11 @@
                         <div class="reservation__info">
                             <ul class="reservation__list">
                                 <li class="reservation__item">
-                                    <h3 class="reservation__item-title">Sunday to Tuesday</h3>
+                                    <h3 class="reservation__item__title">Sunday to Tuesday</h3>
                                     <p class="reservation__item-text">09:00 AM - 10.00 PM</p>
                                 </li>
                                 <li class="reservation__item">
-                                    <h3 class="reservation__item-title">Friday to Saturday</h3>
+                                    <h3 class="reservation__item__title">Friday to Saturday</h3>
                                     <p class="reservation__item-text">09:00 AM - 10.00 PM</p>
                                 </li>
                             </ul>
@@ -237,7 +244,7 @@
             </section>
 
             <section class="reviews">
-                <div class="reviews-container container">
+                <div class="reviews__container container">
                     <div class="reviews__info">
                         <p class="uptitle reviews__uptitle">FEATURES</p>
                         <h2 class="title reviews__title">Why people choose us?</h2>
@@ -246,78 +253,81 @@
                             Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.
                         </p>
                     </div>
-                    <div class="reviews__list">
-                        <article class="review__card">
-                            <div class="review-card__content">
-                                <blockquote class="review-card__quote">
-                                    “Lorem ipsum dolor sit amet consectetur. Suspendisse aliquet tellus adipiscing condimentum donec
-                                    blandit. Dignissim nunc facilisi pretium id molestie lectus duis.”
-                                </blockquote>
-                                <div class="review-card__stars">
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star-outline"></div>
-                                </div>
 
-                                <div class="review-card__author">
-                                    <p class="review-card__author-name">John</p>
-                                    <p class="review-card__author-job">Business Man</p>
-                                </div>
-                                <div class="review-card__icon-wrapper">
-                                    <div class="review-card__mask"></div>
-                                </div>
-                            </div>
-                        </article>
+                    <div class="reviews__list-wrapper">
+                        <div class="reviews__list">
+                            <article class="review__card">
+                                <div class="review-card__content">
+                                    <blockquote class="review-card__quote">
+                                        “Lorem ipsum dolor sit amet consectetur. Suspendisse aliquet tellus adipiscing condimentum donec
+                                        blandit. Dignissim nunc facilisi pretium id molestie lectus duis.”
+                                    </blockquote>
+                                    <div class="review-card__stars">
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star-outline"></div>
+                                    </div>
 
-                        <article class="review__card">
-                            <div class="review-card__content">
-                                <blockquote class="review-card__quote">
-                                    “Lorem ipsum dolor sit amet consectetur. Suspendisse aliquet tellus adipiscing condimentum donec
-                                    blandit. Dignissim nunc facilisi pretium id molestie lectus duis.”
-                                </blockquote>
-                                <div class="review-card__stars">
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star-outline"></div>
+                                    <div class="review-card__author">
+                                        <p class="review-card__author-name">John</p>
+                                        <p class="review-card__author-job">Business Man</p>
+                                    </div>
+                                    <div class="review-card__icon-wrapper">
+                                        <div class="review-card__mask"></div>
+                                    </div>
                                 </div>
+                            </article>
 
-                                <div class="review-card__author">
-                                    <p class="review-card__author-name">John</p>
-                                    <p class="review-card__author-job">Business Man</p>
-                                </div>
-                                <div class="review-card__icon-wrapper">
-                                    <div class="review-card__mask"></div>
-                                </div>
-                            </div>
-                        </article>
+                            <article class="review__card">
+                                <div class="review-card__content">
+                                    <blockquote class="review-card__quote">
+                                        “Lorem ipsum dolor sit amet consectetur. Suspendisse aliquet tellus adipiscing condimentum donec
+                                        blandit. Dignissim nunc facilisi pretium id molestie lectus duis.”
+                                    </blockquote>
+                                    <div class="review-card__stars">
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star-outline"></div>
+                                    </div>
 
-                        <article class="review__card">
-                            <div class="review-card__content">
-                                <blockquote class="review-card__quote">
-                                    “Lorem ipsum dolor sit amet consectetur. Suspendisse aliquet tellus adipiscing condimentum donec
-                                    blandit. Dignissim nunc facilisi pretium id molestie lectus duis.”
-                                </blockquote>
-                                <div class="review-card__stars">
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star"></div>
-                                    <div class="review-card__star-outline"></div>
+                                    <div class="review-card__author">
+                                        <p class="review-card__author-name">John</p>
+                                        <p class="review-card__author-job">Business Man</p>
+                                    </div>
+                                    <div class="review-card__icon-wrapper">
+                                        <div class="review-card__mask"></div>
+                                    </div>
                                 </div>
+                            </article>
 
-                                <div class="review-card__author">
-                                    <p class="review-card__author-name">John</p>
-                                    <p class="review-card__author-job">Business Man</p>
+                            <article class="review__card">
+                                <div class="review-card__content">
+                                    <blockquote class="review-card__quote">
+                                        “Lorem ipsum dolor sit amet consectetur. Suspendisse aliquet tellus adipiscing condimentum donec
+                                        blandit. Dignissim nunc facilisi pretium id molestie lectus duis.”
+                                    </blockquote>
+                                    <div class="review-card__stars">
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star"></div>
+                                        <div class="review-card__star-outline"></div>
+                                    </div>
+
+                                    <div class="review-card__author">
+                                        <p class="review-card__author-name">John</p>
+                                        <p class="review-card__author-job">Business Man</p>
+                                    </div>
+                                    <div class="review-card__icon-wrapper">
+                                        <div class="review-card__mask"></div>
+                                    </div>
                                 </div>
-                                <div class="review-card__icon-wrapper">
-                                    <div class="review-card__mask"></div>
-                                </div>
-                            </div>
-                        </article>
+                            </article>
+                        </div>
                     </div>
 
                     <div class="review-card__controls">
@@ -376,201 +386,140 @@
                     <div class="order__phones">
                         <div class="phone phone--primary">
                             <header class="phone__header">
-                                <nav class="phone__header-nav">
-                                    <div class="phone__burger"></div>
-                                    <div class="phone__account">
-                                        <img src="images/account.jpg" alt="Account" class="phone__avatar" width="55" height="55" />
-                                    </div>
-                                </nav>
+                                <div class="phone__container">
+                                    <nav class="phone__header-nav">
+                                        <div class="phone__burger"></div>
+                                        <div class="phone__account">
+                                            <img src="images/account.jpg" alt="Account" width="55" height="55" />
+                                        </div>
+                                    </nav>
+                                </div>
                             </header>
+
                             <main class="phone__main">
-                                <h2 class="phone__title">Good Chicken. Fast Delivery.</h2>
-                                <ul class="phone__categories">
-                                    <li class="phone__category">
-                                        <div class="phone__category-item">
-                                            <img src="images/main.png" alt="" class="phone__category-img" width="50" height="37" />
-                                            <span class="phone__category-title">Main</span>
-                                        </div>
-                                    </li>
-                                    <li class="phone__category">
-                                        <div class="phone__category-item">
-                                            <img src="images/combos.png" alt="" class="phone__category-img" width="50" height="33" />
-                                            <span class="phone__category-title">Combos</span>
-                                        </div>
-                                    </li>
-                                    <li class="phone__category">
-                                        <div class="phone__category-item">
-                                            <img src="images/sides.png" alt="" class="phone__category-img" width="30" height="40" />
-                                            <span class="phone__category-title">Sides</span>
-                                        </div>
-                                    </li>
-                                    <li class="phone__category">
-                                        <div class="phone__category-item">
-                                            <img src="images/drinks.png" alt="" class="phone__category-img" width="16" height="42" />
-                                            <span class="phone__category-title">Drinks</span>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <div class="phone__container">
+                                    <h2 class="phone__title">Good Chicken.<br />Fast Delivery.</h2>
 
-                                <h3 class="phone__subtitle">Popular</h3>
+                                    <ul class="phone__categories">
+                                        <li class="phone__category">
+                                            <div class="phone__category-item">
+                                                <img src="images/main.png" alt="" class="phone__category-img" width="50" height="37" />
+                                            </div>
+                                            <span class="phone__category__title">Main</span>
+                                        </li>
+                                        <li class="phone__category">
+                                            <div class="phone__category-item phone__category-item--active">
+                                                <img src="images/combos.png" alt="" class="phone__category-img" width="50" height="33" />
+                                            </div>
+                                            <span class="phone__category__title">Combos</span>
+                                        </li>
+                                        <li class="phone__category">
+                                            <div class="phone__category-item">
+                                                <img src="images/sides.png" alt="" class="phone__category-img" width="30" height="40" />
+                                            </div>
+                                            <span class="phone__category__title">Sides</span>
+                                        </li>
+                                        <li class="phone__category">
+                                            <div class="phone__category-item">
+                                                <img src="images/drinks.png" alt="" class="phone__category-img" width="16" height="42" />
+                                            </div>
+                                            <span class="phone__category__title">Drinks</span>
+                                        </li>
+                                    </ul>
 
-                                <ul class="phone__products">
-                                    <li class="phone__product">
-                                        <div class="phone__product-item">
-                                            <img
-                                                src="images/product-plate.png"
-                                                alt=""
-                                                class="phone__decoration-img"
-                                                width="114"
-                                                height="114"
-                                            />
-                                            <img
-                                                src="images/product-jollof.png"
-                                                alt=""
-                                                class="phone__product-img"
-                                                width="102"
-                                                height="102"
-                                            />
-                                            <p class="phone__product-title">Jollof Rice with 1/4 Chicken & Plantain</p>
-                                            <p class="phone__product-price">$15</p>
-                                            <img
-                                                src="images/product_warning.png"
-                                                alt=""
-                                                class="phone__product-img"
-                                                width="34"
-                                                height="31"
-                                            />
-                                        </div>
-                                    </li>
-                                    <li class="phone__product">
-                                        <div class="phone__product-item">
-                                            <img
-                                                src="images/product-plate.png"
-                                                alt=""
-                                                class="phone__decoration-img"
-                                                width="114"
-                                                height="114"
-                                            />
+                                    <h3 class="phone__subtitle">Popular</h3>
+
+                                    <ul class="phone__products">
+                                        <li class="phone__product-card">
+                                            <img src="images/product-plate.png" alt="" class="phone__card-plate" width="114" height="114" />
+                                            <img src="images/product-jollof.png" alt="" class="phone__card-food" width="102" height="102" />
+                                            <p class="phone__card__title">
+                                                Jollof Rice with<br />
+                                                <span>1/4</span> Chicken & Plantain
+                                            </p>
+                                            <p class="phone__card-price">$15</p>
+                                            <img src="images/product_warning.png" alt="" class="phone__card-badge" width="34" height="31" />
+                                        </li>
+                                        <li class="phone__product-card">
+                                            <img src="images/product-plate.png" alt="" class="phone__card-plate" width="114" height="114" />
                                             <img
                                                 src="images/product-bbq-chicken.png"
                                                 alt=""
-                                                class="phone__product-img"
-                                                width="38"
+                                                class="phone__card-food phone__card-food--bbq"
+                                                width="102"
                                                 height="102"
                                             />
-                                            <p class="phone__product-title">Half BBQ Chicken</p>
-                                            <p class="phone__product-price">$12</p>
-                                            <img
-                                                src="images/product_warning.png"
-                                                alt=""
-                                                class="phone__product-img"
-                                                width="34"
-                                                height="31"
-                                            />
-                                        </div>
-                                    </li>
-                                </ul>
-                            </main>
-                            <footer class="phone__footer">
-                                <nav class="phone__footer-nav">
-                                    <ul class="phone__button-set">
-                                        <li class="phone__button">
-                                            <img
-                                                src="images/icon/svg/btn-wishlist.svg"
-                                                alt=""
-                                                class="phone__wishlist"
-                                                width="22"
-                                                height="22"
-                                            />
-                                        </li>
-                                        <li class="phone__button">
-                                            <img src="images/icon/svg/btn-zoom.svg" alt="" class="phone__zoom" width="22" height="22" />
-                                        </li>
-                                        <li class="phone__button">
-                                            <img src="images/icon/svg/btn-cart.svg" alt="" class="phone__cart" width="22" height="22" />
+                                            <p class="phone__card__title">Half BBQ Chicken</p>
+                                            <p class="phone__card-price">$12</p>
+                                            <img src="images/product_warning.png" alt="" class="phone__card-badge" width="34" height="31" />
                                         </li>
                                     </ul>
-                                </nav>
+                                </div>
+                            </main>
+
+                            <footer class="phone__footer">
+                                <div class="phone__container">
+                                    <nav class="phone__footer-nav">
+                                        <ul class="phone__nav-set">
+                                            <li class="phone__nav-btn">
+                                                <img src="images/icon/svg/btn-wishlist.svg" alt="" width="16" height="16" />
+                                            </li>
+                                            <li class="phone__nav-btn">
+                                                <img src="images/icon/svg/btn-zoom.svg" alt="" width="16" height="16" />
+                                            </li>
+                                            <li class="phone__nav-btn">
+                                                <img src="images/icon/svg/btn-cart.svg" alt="" width="18" height="13" />
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </footer>
                         </div>
+
                         <div class="phone phone--secondary">
-                            <header class="phone__header">
-                                <nav class="phone__header-nav">
-                                    <div class="phone__button-arrow">
-                                        <img src="images/icon/svg/arrow-left.svg" alt="" class="phone__button-img" width="14" height="10" />
-                                    </div>
-                                    <span class="phone__uptitle">Food Details</span>
-                                    <div class="phone__button-wishlist">
-                                        <img
-                                            src="images/icon/svg/btn-wishlist-decoration.svg"
-                                            alt=""
-                                            class="phone__wishlist"
-                                            width="36"
-                                            height="36"
-                                        />
-                                    </div>
-                                </nav>
+                            <header class="phone__header phone__header--detail">
+                                <div class="phone__header-back">
+                                    <img src="images/icon/svg/arrow-left.svg" alt="" width="14" height="10" />
+                                </div>
+                                <span class="phone__header__title">Food Details</span>
+                                <div class="phone__header-wish">
+                                    <img src="images/icon/svg/btn-wishlist-decoration.svg" alt="" width="36" height="36" />
+                                </div>
                             </header>
 
-                            <main class="phone__main">
-                                <div class="phone__product">
-                                    <img src="images/product-plate.png" alt="" class="phone__decoration-img" width="234" height="240" />
-                                    <img src="images/product-jollof.png" alt="" class="phone__product-img" width="209" height="207" />
+                            <main class="phone__main phone__main--detail">
+                                <div class="phone__hero">
+                                    <img src="images/product-main-plate.png" alt="" class="phone__hero-plate" width="234" height="240" />
+                                    <img src="images/product-main-jollof.png" alt="" class="phone__hero-food" width="209" height="207" />
+                                    <img src="images/product_warning-main.png" alt="" class="phone__hero-badge" width="45" height="42" />
                                 </div>
-                                <div class="phone__product-warning">
-                                    <img src="images/product_warning.png" alt="" class="phone__warning-img" width="45" height="42" />
-                                </div>
-                                <div class="phone__content">
-                                    <h2 class="phone__title">Jollof Rice with 1/4 Chicken & Plantain</h2>
-                                    <ul class="phone__stars-set">
-                                        <li class="phone__star">
-                                            <img
-                                                src="images/icon/svg/star-decoration.svg"
-                                                class="phone__star-img"
-                                                alt=""
-                                                width="12"
-                                                height="12"
-                                            />
-                                        </li>
-                                        <li class="phone__star">
-                                            <img
-                                                src="images/icon/svg/star-decoration.svg"
-                                                class="phone__star-img"
-                                                alt=""
-                                                width="12"
-                                                height="12"
-                                            />
-                                        </li>
-                                        <li class="phone__star">
-                                            <img
-                                                src="images/icon/svg/star-decoration.svg"
-                                                class="phone__star-img"
-                                                alt=""
-                                                width="12"
-                                                height="12"
-                                            />
-                                        </li>
-                                        <li class="phone__star">
-                                            <img
-                                                src="images/icon/svg/star-decoration.svg"
-                                                class="phone__star-img"
-                                                alt=""
-                                                width="12"
-                                                height="12"
-                                            />
-                                        </li>
-                                        <li class="phone__star">
-                                            <img
-                                                src="images/icon/svg/star-decoration.svg"
-                                                class="phone__star-img"
-                                                alt=""
-                                                width="12"
-                                                height="12"
-                                            />
-                                        </li>
-                                    </ul>
-                                    <span class="phone__star-description">(5 Out of 5)</span>
-                                    <p class="phone__description">
+
+                                <div class="phone__detail">
+                                    <h2 class="phone__detail__title">
+                                        Jollof Rice with <br />
+                                        1/4 Chicken & Plantain
+                                    </h2>
+                                    <div class="phone__detail-rating">
+                                        <ul class="phone__stars">
+                                            <li class="phone__star">
+                                                <img src="images/icon/svg/star-decoration.svg" alt="" width="12" height="12" />
+                                            </li>
+                                            <li class="phone__star">
+                                                <img src="images/icon/svg/star-decoration.svg" alt="" width="12" height="12" />
+                                            </li>
+                                            <li class="phone__star">
+                                                <img src="images/icon/svg/star-decoration.svg" alt="" width="12" height="12" />
+                                            </li>
+                                            <li class="phone__star">
+                                                <img src="images/icon/svg/star-decoration.svg" alt="" width="12" height="12" />
+                                            </li>
+                                            <li class="phone__star">
+                                                <img src="images/icon/svg/star-decoration.svg" alt="" width="12" height="12" />
+                                            </li>
+                                        </ul>
+                                        <span class="phone__detail-score">(5 Out of 5)</span>
+                                    </div>
+                                    <p class="phone__detail-desc">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                         et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
                                         eu fugiat nulla pariatur. Excepteur sint occaecat non proident, sunt in culpa qui officia deserunt
@@ -579,15 +528,13 @@
                                 </div>
                             </main>
 
-                            <footer class="phone__footer">
-                                <div class="phone__footer-buttons">
-                                    <div class="qty">
-                                        <button class="qty__btn qty__btn--minus">−</button>
-                                        <span class="qty__value">1</span>
-                                        <button class="qty__btn qty__btn--plus">+</button>
-                                    </div>
-                                    <button type="button" class="phone__button-add">Add to Cart <span>$15</span></button>
+                            <footer class="phone__footer phone__footer--detail">
+                                <div class="phone__qty">
+                                    <button class="phone__qty-btn">−</button>
+                                    <span class="phone__qty-val">1</span>
+                                    <button class="phone__qty-btn">+</button>
                                 </div>
+                                <button class="phone__add-btn">Add to Cart <span>$15</span></button>
                             </footer>
                         </div>
                     </div>
@@ -595,23 +542,23 @@
             </section>
 
             <section class="menu" id="menu">
-                <div class="menu-container container">
+                <div class="menu__container container">
                     <div class="menu__info">
                         <p class="uptitle menu__uptitle">MENU</p>
-                        <h2 class="title menu-title">Explore Our Foods</h2>
+                        <h2 class="title menu__title">Explore Our Foods</h2>
                         <p class="description menu__description">
                             Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim.
                             Turpis aliquet at ac eu donec ut. Sagittis vestibulum at quis non massa netus.
                         </p>
                     </div>
-                    <div class="menu__content">
+                    <div class="menu__foods-set">
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <div class="menu__product">
                                     <div class="menu-product__img-wrapper">
                                         <img
                                             class="menu-product__img"
-                                            src="images/menu-food-one.jpg"
+                                            src="images/menu-food-one.png"
                                             width="464"
                                             height="320"
                                             alt="Raspberry French Toast"
@@ -619,10 +566,12 @@
                                             decoding="async"
                                         />
                                     </div>
-                                    <h3 class="title menu-product-title">Raspberry French Toast</h3>
-                                    <p class="description menu-product__description">Time: 10 - 15 Minutes | Serves: 1</p>
-                                    <p class="menu-product__price">$12.50 <span class="menu-product__price-off">$13.20</span></p>
-                                    <button type="button" class="menu-product__cta">Order Now</button>
+                                    <div class="menu__content">
+                                        <h3 class="title menu-product__title">Raspberry French Toast</h3>
+                                        <p class="description menu-product__description">Time: 10 - 15 Minutes | Serves: 1</p>
+                                        <p class="menu-product__price">$12.50 <span class="menu-product__price-off">$13.20</span></p>
+                                        <button type="button" class="menu-product__cta">Order Now</button>
+                                    </div>
                                 </div>
                             </li>
 
@@ -631,7 +580,7 @@
                                     <div class="menu-product__img-wrapper">
                                         <img
                                             class="menu-product__img"
-                                            src="images/menu-food-two.jpg"
+                                            src="images/menu-food-two.png"
                                             width="464"
                                             height="320"
                                             alt="Raspberry French Toast"
@@ -639,10 +588,12 @@
                                             decoding="async"
                                         />
                                     </div>
-                                    <h3 class="title menu-product-title">Raspberry French Toast</h3>
-                                    <p class="description menu-product__description">Time: 10 - 15 Minutes | Serves: 1</p>
-                                    <p class="menu-product__price">$12.50 <span class="menu-product__price-off">$13.20</span></p>
-                                    <button type="button" class="menu-product__cta">Order Now</button>
+                                    <div class="menu__content">
+                                        <h3 class="title menu-product__title">Raspberry French Toast</h3>
+                                        <p class="description menu-product__description">Time: 10 - 15 Minutes | Serves: 1</p>
+                                        <p class="menu-product__price">$12.50 <span class="menu-product__price-off">$13.20</span></p>
+                                        <button type="button" class="menu-product__cta">Order Now</button>
+                                    </div>
                                 </div>
                             </li>
 
@@ -651,7 +602,7 @@
                                     <div class="menu-product__img-wrapper">
                                         <img
                                             class="menu-product__img"
-                                            src="images/menu-food-three.jpg"
+                                            src="images/menu-food-three.png"
                                             width="464"
                                             height="320"
                                             alt="Raspberry French Toast"
@@ -659,10 +610,12 @@
                                             decoding="async"
                                         />
                                     </div>
-                                    <h3 class="title menu-product-title">Raspberry French Toast</h3>
-                                    <p class="description menu-product__description">Time: 10 - 15 Minutes | Serves: 1</p>
-                                    <p class="menu-product__price">$12.50 <span class="menu-product__price-off">$13.20</span></p>
-                                    <button type="button" class="menu-product__cta">Order Now</button>
+                                    <div class="menu__content">
+                                        <h3 class="title menu-product__title">Raspberry French Toast</h3>
+                                        <p class="description menu-product__description">Time: 10 - 15 Minutes | Serves: 1</p>
+                                        <p class="menu-product__price">$12.50 <span class="menu-product__price-off">$13.20</span></p>
+                                        <button type="button" class="menu-product__cta">Order Now</button>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -671,32 +624,34 @@
             </section>
 
             <section class="news-letter">
-                <div class="news-letter-container container">
-                    <p class="uptitle news-letter__uptitle">NEWS LETTER</p>
-                    <h2 class="title news-letter-title">Subscribe Our Newsletter</h2>
-                    <p class="description news-letter__description">
-                        Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim.
-                        Turpis aliquet at ac eu donec ut.
-                    </p>
-                    <form class="news-letter__form" action="/subscribe" method="POST">
-                        <input
-                            type="email"
-                            id="newsletter-email"
-                            class="news-letter__cta"
-                            placeholder="Type here"
-                            aria-label="Email for newsletter"
-                            required
-                        />
-                        <button type="submit" class="news-letter__btn">Subscribe</button>
-                    </form>
+                <div class="news-letter__container container">
+                    <div class="news-letter__content">
+                        <p class="uptitle news-letter__uptitle">NEWS LETTER</p>
+                        <h2 class="title news-letter__title">Subscribe Our Newsletter</h2>
+                        <p class="description news-letter__description">
+                            Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim.
+                            Turpis aliquet at ac eu donec ut.
+                        </p>
+                        <form class="news-letter__form" action="/subscribe" method="POST">
+                            <input
+                                type="email"
+                                id="newsletter-email"
+                                class="news-letter__cta"
+                                placeholder="Type here"
+                                aria-label="Email for newsletter"
+                                required
+                            />
+                            <button type="submit" class="news-letter__btn">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
 
         <footer class="footer" id="contact">
-            <div class="footer-container container">
+            <div class="footer__container container">
                 <div class="footer__info">
-                    <div class="footer__logo-wrapper">
+                    <a href="index.html" class="footer__logo-wrapper">
                         <img
                             class="footer__logo"
                             src="images/icon/svg/main-logo.svg"
@@ -706,7 +661,7 @@
                             loading="lazy"
                             decoding="async"
                         />
-                    </div>
+                    </a>
                     <p class="description footer__description">
                         Lorem ipsum dolor sit amet consectetur. Tristique cursus morbi nibh nec et vulputate. Turpis tortor nisi imperdiet
                         quis accumsan. Ligula netus amet leo ultricies. Neque venenatis magnis amet eget sagittis leo enim.
@@ -771,32 +726,33 @@
                 <nav class="footer__nav">
                     <ul class="footer-nav__list">
                         <li class="footer-nav__item">
-                            <p class="title footer-nav-title">Opening Restaurant</p>
+                            <p class="title footer-nav__title">Opening Restaurant</p>
                             <p class="footer-nav__info">Sa - We: 09 :00am - 10:00pm</p>
                             <p class="footer-nav__info">Thu - We: 09 :00am - 10:00pm</p>
                             <p class="footer-nav__info">Friday Closed</p>
                         </li>
                         <li class="footer-nav__item">
-                            <p class="title footer-nav-title">User Link</p>
-                            <a class="footer-nav__link" href="#">About Us</a>
-                            <a class="footer-nav__link" href="#">Contact Us</a>
-                            <a class="footer-nav__link" href="#">Order Delivery</a>
-                            <a class="footer-nav__link" href="#">Payment & Tax</a>
-                            <a class="footer-nav__link" href="#">Terms of Services</a>
+                            <p class="title footer-nav__title">User Link</p>
+                            <a class="footer-nav__info" href="#about">About Us</a>
+                            <a class="footer-nav__info" href="#">Contact Us</a>
+                            <a class="footer-nav__info" href="#order">Order Delivery</a>
+                            <a class="footer-nav__info" href="#">Payment & Tax</a>
+                            <a class="footer-nav__info" href="#">Terms of Services</a>
                         </li>
                         <li class="footer-nav__item">
-                            <p class="title footer-nav-title">Contact Us</p>
-                            <p class="footer-nav__info">543 Country Club Ave, NC 27587, London, UK</p>
+                            <p class="title footer-nav__title">Contact Us</p>
+                            <p class="footer-nav__info">
+                                543 Country Club Ave,<br />
+                                NC 27587, London, UK
+                            </p>
                             <a class="footer-nav__info" href="tel:+12576541120">+1257 6541120</a>
-                        </li>
-                        <li class="footer-nav__item">
                             <form class="footer-nav__form" action="/subscribe" method="POST">
                                 <input
                                     type="email"
-                                    id="footernav-email"
+                                    id="footer-nav__email"
                                     class="footer-nav__cta"
                                     placeholder="Email"
-                                    aria-label="Email for footernav"
+                                    aria-label="Email for footer-nav"
                                     required
                                 />
                                 <button type="submit" class="footer-nav__btn">Subscribe</button>
@@ -805,6 +761,9 @@
                     </ul>
                 </nav>
                 <div class="footer__copyright">
+                    <svg class="footer__line" viewBox="0 0 1440 2" preserveAspectRatio="none">
+                        <path d="M0 1L1440 1" stroke="#192124" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 10" />
+                    </svg>
                     <p class="footer-copyright__info">©2024 ARR, All right reserved</p>
                     <div class="footer-copyright__links">
                         <a href="#" class="footer-copyright__link">Privacy Policy</a>
@@ -813,5 +772,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
